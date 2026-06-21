@@ -1,37 +1,28 @@
-<?xml version="1.0" encoding="iso-8859-1"?>
-<!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
-<circle style="fill:#FFDA44;" cx="256" cy="256" r="256"/>
-<path style="fill:#338AF3;" d="M0,256C0,114.616,114.616,0,256,0s256,114.616,256,256"/>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="bg" x1="8" y1="5" x2="56" y2="59" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#154f9f"/>
+      <stop offset="1" stop-color="#061d48"/>
+    </linearGradient>
+    <linearGradient id="water" x1="9" y1="15" x2="50" y2="52" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#4aa3ff" stop-opacity=".55"/>
+      <stop offset="1" stop-color="#163d80" stop-opacity=".45"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="14" fill="url(#bg)"/>
+  <path d="M6 21c9-5 15-4 23-1 9 3 16 1 29-7v42H6Z" fill="url(#water)"/>
+  <g fill="none" stroke="#8cc8ff" stroke-opacity=".48" stroke-width="2" stroke-linecap="round">
+    <path d="M10 16h18M36 16h17"/>
+    <path d="M9 29h13M31 29h23"/>
+    <path d="M12 42h19M40 42h13"/>
+    <path d="M20 9v16M20 36v18"/>
+    <path d="M36 10v13M36 34v20"/>
+    <path d="M50 8v16M50 34v19"/>
+  </g>
+  <path d="M13 49c7-1 10-7 15-15 5-8 10-12 22-14" fill="none" stroke="#5bd37e" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="13" cy="49" r="4.5" fill="#5bd37e"/>
+  <circle cx="28" cy="34" r="4.5" fill="#ffd35a"/>
+  <circle cx="50" cy="20" r="4.5" fill="#5bd37e"/>
+  <circle cx="43" cy="23" r="13" fill="#ffffff" stroke="#e14646" stroke-width="5"/>
+  <path d="M35 31 51 15" stroke="#e14646" stroke-width="5" stroke-linecap="round"/>
 </svg>
