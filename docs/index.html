@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Rule-VLN is an ECCV 2026 benchmark and zero-shot rectification framework for rule-compliant vision-and-language navigation in urban environments.">
+  <meta name="keywords" content="Rule-VLN, Vision-and-Language Navigation, Embodied AI, Rule Compliance, ECCV 2026">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rule-VLN</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/favicon.svg">
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+</head>
+<body>
+  <nav class="navbar project-nav" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item project-mark" href="#">Rule-VLN</a>
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="project-navbar">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+    <div id="project-navbar" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#abstract">Abstract</a>
+        <a class="navbar-item" href="#benchmark">Benchmark</a>
+        <a class="navbar-item" href="#method">Method</a>
+        <a class="navbar-item" href="#results">Results</a>
+        <a class="navbar-item" href="#citation">Citation</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="project-header">
+    <div class="container is-max-desktop">
+      <p class="venue">ECCV 2026</p>
+      <h1 class="title publication-title">Rule-VLN: Bridging Perception and Compliance via Semantic Reasoning and Geometric Rectification</h1>
+
+      <div class="publication-authors">
+        <span>Jiawen Wen<sup>1</sup></span>
+        <span>Penglei Sun<sup>1,*</sup></span>
+        <span>Wenjie Zhang<sup>1</sup></span>
+        <span>Suixuan Qiu<sup>2</sup></span>
+        <span>Weisheng Xu<sup>1</sup></span>
+        <span>Xiaofei Yang<sup>3</sup></span>
+        <span>Xiaowen Chu<sup>1,*</sup></span>
+      </div>
+
+      <div class="publication-affiliations">
+        <span><sup>1</sup>Hong Kong University of Science and Technology (Guangzhou)</span>
+        <span><sup>2</sup>Beijing Normal University</span>
+        <span><sup>3</sup>Guangzhou University</span>
+        <span><sup>*</sup>Corresponding authors</span>
+      </div>
+
+      <div class="publication-links" aria-label="Project links">
+        <a class="button is-normal is-rounded is-dark project-button" href="https://arxiv.org/abs/2604.16993" target="_blank" rel="noopener">
+          <span class="icon"><i class="fas fa-file-pdf"></i></span>
+          <span>Paper</span>
+        </a>
+        <a class="button is-normal is-rounded is-dark project-button" href="https://github.com/Jeffry-wen/Rule-VLN" target="_blank" rel="noopener">
+          <span class="icon"><i class="fab fa-github"></i></span>
+          <span>Code</span>
+        </a>
+        <a class="button is-normal is-rounded is-dark project-button" href="https://huggingface.co/datasets/jeffry77/Rule-VLN" target="_blank" rel="noopener">
+          <span class="icon"><i class="fas fa-database"></i></span>
+          <span>Dataset</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section teaser-section">
+      <div class="container is-max-widescreen">
+        <figure class="figure-panel">
+          <img src="./static/images/abstract-figure.jpg" alt="Rule-VLN paradigm overview">
+          <figcaption>
+            The Rule-VLN paradigm: regulatory visual signals turn geometrically reachable streets into semantically constrained navigation problems.
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section id="abstract" class="section content-section">
+      <div class="container is-max-desktop">
+        <h2 class="section-title">Abstract</h2>
+        <p>
+          As embodied AI transitions to real-world deployment, Vision-and-Language Navigation (VLN) must evolve from mere reachability to social compliance. Current agents often fall into a goal-driven trap, prioritizing physical geometry over semantic rules and overlooking subtle regulatory constraints. Rule-VLN is the first large-scale urban benchmark for rule-compliant navigation, spanning a 29k-node environment and injecting 177 diverse regulatory categories into 8k constrained nodes across four curriculum levels.
+        </p>
+        <p>
+          We further propose the Semantic Navigation Rectification Module (SNRM), a universal, zero-shot module that equips pre-trained agents with safety awareness. SNRM combines coarse-to-fine visual perception with an epistemic mental map for dynamic detour planning, significantly reducing constraint violations while restoring task completion performance.
+        </p>
+      </div>
+    </section>
+
+    <section id="benchmark" class="section band-section">
+      <div class="container is-max-desktop">
+        <h2 class="section-title">Benchmark</h2>
+        <div class="stat-grid">
+          <article class="stat-card">
+            <span class="stat-value">29k</span>
+            <span class="stat-label">Urban graph nodes</span>
+          </article>
+          <article class="stat-card">
+            <span class="stat-value">8k</span>
+            <span class="stat-label">Constrained nodes</span>
+          </article>
+          <article class="stat-card">
+            <span class="stat-value">177</span>
+            <span class="stat-label">Regulatory categories</span>
+          </article>
+          <article class="stat-card">
+            <span class="stat-value">4</span>
+            <span class="stat-label">Curriculum levels</span>
+          </article>
+        </div>
+        <p>
+          Rule-VLN builds on Touchdown by introducing dynamic semantic constraints into graph traversal. Paths that are geometrically reachable may become invalid when traffic signs or regulatory signals prohibit the intended action, forcing agents to reason about whether they may proceed rather than only whether they can proceed.
+        </p>
+        <figure class="figure-panel benchmark-figure">
+          <img src="./static/images/rule-vln-pipeline.jpg" alt="Rule-VLN benchmark construction pipeline">
+          <figcaption>
+            Benchmark construction pipeline for semantic rule injection and curriculum-level constrained navigation.
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section id="method" class="section content-section">
+      <div class="container is-max-widescreen">
+        <div class="narrow-copy">
+          <h2 class="section-title">Method</h2>
+          <p>
+            SNRM is a plug-and-play rectification module for pre-trained VLN agents. It routes observations through dual-stage coarse-to-fine perception, grounds candidate rule labels, and maintains an epistemic mental map to prune illegal actions and select compliant detours.
+          </p>
+        </div>
+        <figure class="figure-panel method-figure">
+          <img src="./static/images/snrm-method.jpg" alt="Semantic Navigation Rectification Module overview">
+          <figcaption>
+            SNRM bridges visual rule perception and geometric navigation by turning semantic prohibitions into hard graph constraints.
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section id="results" class="section band-section">
+      <div class="container is-max-desktop">
+        <h2 class="section-title">Results</h2>
+        <div class="result-grid">
+          <article class="result-card">
+            <span class="result-kicker">Constraint Violation Rate</span>
+            <strong>-19.26%</strong>
+            <p>SNRM substantially reduces illegal rule-crossing behavior under constrained navigation.</p>
+          </article>
+          <article class="result-card">
+            <span class="result-kicker">Task Completion</span>
+            <strong>+5.97%</strong>
+            <p>Rule-aware detour planning restores navigation ability without retraining the backbone.</p>
+          </article>
+        </div>
+        <figure class="figure-panel result-figure">
+          <img src="./static/images/results-tc-cvr.jpg" alt="Task completion and constraint violation results across curriculum difficulty levels">
+          <figcaption>
+            Quantitative comparison across curriculum difficulty levels. SNRM improves task completion while reducing constraint violations.
+          </figcaption>
+        </figure>
+        <figure class="figure-panel result-figure">
+          <img src="./static/images/results-clip-score.jpg" alt="CLIP score comparison for generated rule insertions">
+          <figcaption>
+            MPSI improves visual-semantic alignment over baseline insertion, measured by CLIP score.
+          </figcaption>
+        </figure>
+        <figure class="figure-panel result-figure qualitative-figure">
+          <img src="./static/images/results-trajectory.jpg" alt="Qualitative trajectory comparison for rule-compliant navigation">
+          <figcaption>
+            Qualitative comparison: SNRM identifies semantic prohibitions and selects compliant detours.
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section id="citation" class="section content-section">
+      <div class="container is-max-desktop">
+        <h2 class="section-title">Citation</h2>
+        <pre class="bibtex"><code>@inproceedings{wen2026rulevln,
+  title     = {Rule-VLN: Bridging Perception and Compliance via Semantic Reasoning and Geometric Rectification},
+  author    = {Wen, Jiawen and Sun, Penglei and Zhang, Wenjie and Qiu, Suixuan and Xu, Weisheng and Yang, Xiaofei and Chu, Xiaowen},
+  booktitle = {European Conference on Computer Vision},
+  year      = {2026}
+}</code></pre>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer project-footer">
+    <div class="content has-text-centered">
+      <p>Rule-VLN project page. Website adapted from common academic project page layouts.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var burgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+      burgers.forEach(function (burger) {
+        burger.addEventListener('click', function () {
+          var target = document.getElementById(burger.dataset.target);
+          burger.classList.toggle('is-active');
+          target.classList.toggle('is-active');
+        });
+      });
+    });
+  </script>
+</body>
+</html>

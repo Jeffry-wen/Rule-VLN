@@ -1,0 +1,326 @@
+:root {
+  --ink: #222222;
+  --muted: #555555;
+  --line: #e6e6e6;
+  --soft: #f5f5f5;
+  --white: #ffffff;
+  --accent: #9b2f2f;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: var(--ink);
+  background: var(--white);
+  font-family: "Noto Sans", "Helvetica Neue", Arial, sans-serif;
+  letter-spacing: 0;
+}
+
+a {
+  color: hsl(204, 86%, 53%);
+}
+
+.project-nav {
+  background: var(--white);
+  border-bottom: 1px solid var(--line);
+  box-shadow: none;
+}
+
+.project-mark {
+  color: var(--ink);
+  font-family: "Google Sans", "Noto Sans", sans-serif;
+  font-weight: 700;
+}
+
+.navbar-item {
+  color: var(--ink);
+  font-family: "Google Sans", "Noto Sans", sans-serif;
+}
+
+.navbar-item:hover,
+.navbar-item:focus {
+  color: hsl(204, 86%, 53%);
+  background: #fafafa;
+}
+
+.project-header {
+  padding: 3.4rem 1.5rem 2rem;
+  background: var(--white);
+}
+
+.venue {
+  margin-bottom: 0.8rem;
+  color: var(--accent);
+  font-family: "Google Sans", "Noto Sans", sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.publication-title {
+  max-width: 960px;
+  margin: 0 auto 1.2rem;
+  color: var(--ink);
+  font-family: "Google Sans", "Noto Sans", sans-serif;
+  font-size: clamp(2rem, 4.2vw, 3rem);
+  line-height: 1.12;
+  text-align: center;
+}
+
+.publication-authors,
+.publication-affiliations {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.3rem 0.85rem;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+}
+
+.publication-authors {
+  max-width: 980px;
+  color: var(--ink);
+  font-family: "Google Sans", "Noto Sans", sans-serif;
+  font-size: 1.03rem;
+  font-weight: 600;
+}
+
+.publication-affiliations {
+  max-width: 940px;
+  margin-top: 0.75rem;
+  color: var(--muted);
+  font-size: 0.96rem;
+}
+
+.publication-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.55rem;
+  margin-top: 1.35rem;
+}
+
+.project-button {
+  min-width: 112px;
+  height: 40px;
+  padding-right: 1.15rem;
+  padding-left: 1.15rem;
+  font-family: "Google Sans", "Noto Sans", sans-serif;
+  font-weight: 700;
+}
+
+.section {
+  padding: 3rem 1.5rem;
+}
+
+.teaser-section {
+  padding-top: 0.5rem;
+  padding-bottom: 2.8rem;
+}
+
+.content-section {
+  background: var(--white);
+}
+
+.band-section {
+  background: var(--soft);
+}
+
+.section-title {
+  margin-bottom: 1rem;
+  color: var(--ink);
+  font-family: "Google Sans", "Noto Sans", sans-serif;
+  font-size: 1.65rem;
+  font-weight: 700;
+  line-height: 1.25;
+  text-align: center;
+}
+
+.content-section p,
+.band-section p {
+  color: var(--muted);
+  font-size: 1.04rem;
+  line-height: 1.65;
+}
+
+.narrow-copy {
+  max-width: 840px;
+  margin: 0 auto 1.5rem;
+}
+
+.figure-panel {
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 6px;
+  background: var(--white);
+}
+
+.figure-panel img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.figure-panel figcaption {
+  padding: 0.85rem 0.75rem 0;
+  color: var(--muted);
+  font-size: 0.96rem;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.teaser-section .figure-panel {
+  max-width: 900px;
+}
+
+.benchmark-figure {
+  max-width: 900px;
+  margin-top: 1.6rem;
+}
+
+.method-figure {
+  max-width: 780px;
+}
+
+.result-figure {
+  max-width: 920px;
+  margin-top: 1.7rem;
+}
+
+.qualitative-figure {
+  max-width: 860px;
+}
+
+.stat-grid,
+.result-grid {
+  display: grid;
+  gap: 1rem;
+  margin: 1.35rem 0;
+}
+
+.stat-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.result-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.stat-card,
+.result-card {
+  padding: 1rem;
+  border-radius: 6px;
+  background: var(--white);
+  text-align: center;
+}
+
+.stat-value {
+  display: block;
+  color: var(--ink);
+  font-family: "Google Sans", "Noto Sans", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.stat-label {
+  display: block;
+  margin-top: 0.45rem;
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+.result-card {
+  text-align: left;
+}
+
+.result-kicker {
+  display: block;
+  color: var(--muted);
+  font-size: 0.86rem;
+  font-weight: 700;
+}
+
+.result-card strong {
+  display: block;
+  margin: 0.35rem 0;
+  color: var(--ink);
+  font-family: "Google Sans", "Noto Sans", sans-serif;
+  font-size: 2rem;
+  line-height: 1;
+}
+
+.result-card p {
+  margin: 0;
+  font-size: 0.98rem;
+  line-height: 1.5;
+}
+
+.bibtex {
+  overflow-x: auto;
+  margin-top: 1rem;
+  padding: 1rem;
+  border-radius: 6px;
+  background: #f5f5f5;
+  color: var(--ink);
+  font-size: 0.9rem;
+  line-height: 1.55;
+}
+
+.project-footer {
+  padding: 2rem 1.5rem;
+  background: var(--white);
+  border-top: 1px solid var(--line);
+}
+
+.project-footer p {
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+@media screen and (max-width: 900px) {
+  .project-header {
+    padding-top: 3rem;
+  }
+
+  .stat-grid,
+  .result-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .section {
+    padding: 2.5rem 1rem;
+  }
+
+  .project-header {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+
+  .publication-title {
+    font-size: 1.9rem;
+  }
+
+  .project-button {
+    width: auto;
+    min-width: 104px;
+  }
+
+  .publication-links {
+    gap: 0.45rem;
+  }
+
+  .stat-grid,
+  .result-grid {
+    grid-template-columns: 1fr;
+  }
+}
