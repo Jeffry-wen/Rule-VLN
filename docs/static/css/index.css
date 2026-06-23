@@ -62,10 +62,10 @@ a {
   inset: 0;
   z-index: -2;
   background-image: url("../images/dataset-random-grid.jpg");
-  background-position: center;
-  background-size: cover;
+  background-position: center top;
+  background-repeat: repeat-y;
+  background-size: 100% auto;
   content: "";
-  transform: scale(1.02);
 }
 
 .project-header::after {
