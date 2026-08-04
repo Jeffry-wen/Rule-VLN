@@ -1,0 +1,13 @@
+Rule-VLN includes code derived from the FLAME project and preserves the
+Apache License 2.0 used by that project.
+
+MPSI/third_party/insert_anything contains a minimal inference subset derived
+from Insert-Anything. Its MIT license is preserved in that directory.
+
+MPSI/third_party/inspyrenet contains an optional minimal inference subset
+derived from InSPyReNet. Its MIT license is preserved in that directory.
+
+StreetLearn/Touchdown panoramas, CityNav-Rules images, Hugging Face models,
+FLUX models, and model checkpoints are not covered by the repository license.
+Users must obtain and use those assets under their respective licenses and
+terms.

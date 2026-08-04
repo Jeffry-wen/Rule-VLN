@@ -1,0 +1,36 @@
+model:
+  model_path: xyz9911/FLAME-init
+  only_attend_immediate_media: true
+
+data:
+  dataset: data/touchdown
+  train_if_data_path: data/touchdown/ft_data/train.json
+  eval_if_data_path: data/touchdown/ft_data/dev.json
+  eval_split: dev
+  img_db: data/features/flame_clip_touchdown_120_crop_lmdb
+  img_insert_db: null
+  legacy_navigation_mode: true
+  store_feature: true
+  task: instruction_following
+  micro_batch_size: 1
+  env_batch_size: 1
+  eval_data_size: 128
+  offline: false
+
+training:
+  output_dir: outputs/checkpoints/flame_touchdown
+  deepspeed: configs/deepspeed_zero1.json
+  global_batch_size: 128
+  learning_rate: 0.0001
+  num_train_epochs: 25
+  warmup_ratio: 0.01
+  lr_scheduler_type: cosine
+  bf16: true
+  tf32: false
+  eval_strategy: steps
+  eval_steps: 200
+  save_strategy: steps
+  save_steps: 100
+  save_total_limit: 25
+  report_to: tensorboard
+  navigation_eval: false

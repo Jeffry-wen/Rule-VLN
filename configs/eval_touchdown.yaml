@@ -1,0 +1,43 @@
+model:
+  checkpoint_path: checkpoints/Flame_checkpoint-2500
+  only_attend_immediate_media: true
+
+data:
+  dataset: data/touchdown
+  train_if_data_path: data/touchdown/ft_data/train.json
+  eval_if_data_path: data/touchdown/ft_data/test.json
+  eval_split: test
+  img_db: data/features/flame_clip_touchdown_120_crop_lmdb
+  img_insert_db: data/features/flame_clip_touchdown_insert_120_crop_lmdb
+  img_raw_db: data/images/touchdown_crop_120_lmdb
+  img_raw_insert_db: data/images/touchdown_insert_crop_120_lmdb
+  insert_task_dataset: data/touchdown/insert_touchdown/insert_task{level}_dataset.json
+  legacy_navigation_mode: true
+  store_feature: true
+  env_batch_size: 1
+  eval_data_size: -1
+  max_route_len: 60
+  temperature: 0.0
+  decoding_paths: 1
+
+sna:
+  dino_det_path: IDEA-Research/grounding-dino-base
+  siglip_path: google/siglip2-so400m-patch16-naflex
+  qwen_path: Qwen/Qwen3-VL-4B-Instruct
+  label_file: llm_nav/sna/labels.txt
+  object_detect_threshold: 0.34
+  object_detect_prompt: A traffic sign pole.
+  debug_dir: outputs/sna_debug/task{level}
+  save_debug: false
+  offline: false
+
+sna_runtime:
+  sna_batch_size: 12
+  attn_implementation: flash_attention_2
+
+evaluation:
+  level: 1
+  output: outputs/eval/task{level}_{split}.json
+
+runtime:
+  device_map: cuda

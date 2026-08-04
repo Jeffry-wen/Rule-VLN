@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rule-vln-mpsi"
+version = "1.0.0"
+description = "Mask-Prioritized Semantic Injection for Rule-VLN"
+requires-python = ">=3.10"
+dependencies = [
+  "diffusers==0.32.2",
+  "transformers==4.50.3",
+  "torch>=2.4",
+  "torchvision",
+  "nunchaku",
+  "opencv-python",
+  "Pillow",
+  "numpy",
+  "scikit-learn",
+  "networkx",
+  "PyYAML",
+  "tqdm",
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["mpsi*", "third_party*"]

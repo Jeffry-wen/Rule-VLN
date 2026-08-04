@@ -1,0 +1,50 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+
+# Local editors and environments
+.DS_Store
+.idea/
+.vscode/
+.env
+.env.*
+
+# Downloaded datasets and generated assets
+.asset_download/
+.feature_index_*.pkl
+data/features/
+data/images/
+data/official_touchdown/
+data/citynav_rules/
+data/touchdown/data/
+data/touchdown/ft_data/
+data/touchdown/insert_touchdown/
+
+# Training outputs and model artifacts
+checkpoints/
+models/
+outputs/
+wandb/
+
+# Large binary artifacts should live on Hugging Face or Git LFS, not regular Git.
+*.bin
+*.ckpt
+*.lmdb
+*.mdb
+*.mdb-lock
+*.npy
+*.npz
+*.onnx
+*.pt
+*.pth
+*.safetensors
+*.tar
+*.zip
+*.7z
+
+# Project-page scratch outputs that may contain local absolute paths.
+docs/static/interpolation/
+docs/static/images/*-manifest.json

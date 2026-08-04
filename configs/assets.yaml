@@ -1,0 +1,34 @@
+huggingface_repo: jeffry77/Rule-VLN
+
+assets:
+  base_features:
+    remote: Rule-VLN-Envirement/flame_clip_touchdown_120_crop_lmdb
+    local: data/features/flame_clip_touchdown_120_crop_lmdb
+    required_for: [training, evaluation]
+  inserted_features:
+    remote: Rule-VLN-Envirement/flame_clip_touchdown_insert_120_crop_lmdb
+    local: data/features/flame_clip_touchdown_insert_120_crop_lmdb
+    required_for: [evaluation]
+  task_manifests:
+    remote: Rule-VLN-Envirement/insert_touchdown
+    local: data/touchdown/insert_touchdown
+    required_for: [evaluation]
+  checkpoint:
+    remote: Finetune-ckpt/Flame_checkpoint-2500
+    local: checkpoints/Flame_checkpoint-2500
+    required_for: [evaluation]
+  touchdown_navigation_data:
+    remote: Rule-VLN-Environment/touchdown
+    local: data/touchdown
+    required_for: [training, evaluation]
+  semantic_rule_images:
+    remote: City_Navigation_Rules_Dataset
+    local: data/citynav_rules
+    required_for: [mpsi_generation]
+
+external_assets:
+  streetlearn_touchdown:
+    source: https://sites.google.com/view/streetlearn/dataset
+    redistributed: false
+  flux_weights:
+    redistributed: false

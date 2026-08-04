@@ -1,0 +1,25 @@
+panorama_dir: ../../data/official_touchdown/jpegs_manhattan_touchdown_2022
+nodes_file: ../../data/touchdown/graph/nodes.txt
+links_file: ../../data/touchdown/graph/links.txt
+route_data: ../../data/touchdown/ft_data/test.json
+score_file: ../assets/test_node_scores.txt
+rule_image_dir: ../../data/citynav_rules/img
+rule_labels: ../assets/insert_dataset_json_v2.json
+shape_dir: ../assets/shape_templates
+
+segformer_model: nvidia/segformer-b0-finetuned-cityscapes-1024-1024
+flux_transformer: mit-han-lab/svdq-int4-flux.1-fill-dev
+flux_fill_model: black-forest-labs/FLUX.1-Fill-dev
+flux_redux_model: black-forest-labs/FLUX.1-Redux-dev
+insert_anything_lora: ../../models/insert-anything_extracted_lora_rank-256-bf16.safetensors
+clip_model: openai/clip-vit-large-patch14
+
+seed: 777
+diffusion_seed: 666
+group_count: 4
+quality_probability: 0.3
+road_label: 1
+shape_label: 7
+use_background_segmentation: false
+inspyrenet_config: null
+inspyrenet_checkpoint: null

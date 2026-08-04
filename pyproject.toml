@@ -1,0 +1,44 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rule-vln"
+version = "1.0.0"
+description = "Rule-constrained visual language navigation with FLAME and SNA"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {file = "LICENSE"}
+dependencies = [
+  "accelerate>=0.28",
+  "deepspeed==0.13.5",
+  "einops>=0.8",
+  "huggingface-hub>=0.24",
+  "lmdb==1.4.1",
+  "networkx>=3.1",
+  "numpy>=1.24",
+  "opencv-python>=4.7",
+  "Pillow>=10",
+  "pyxDamerauLevenshtein==1.7.1",
+  "PyYAML>=6",
+  "qwen-vl-utils>=0.0.14",
+  "sentencepiece",
+  "tensorboardX>=2.6",
+  "torch>=2.5",
+  "tqdm>=4.65",
+  "transformers==4.57.3",
+]
+
+[project.optional-dependencies]
+dev = ["pytest==7.4.4", "ruff>=0.8"]
+
+[tool.setuptools.packages.find]
+include = ["llm_nav*", "tools*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"

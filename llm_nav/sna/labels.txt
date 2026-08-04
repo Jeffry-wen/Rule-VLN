@@ -1,0 +1,182 @@
+  0: red and white circle 20 kph speed limit
+  1: red and white circle 30 kph speed limit
+  2: red and white circle 50 kph speed limit
+  3: red and white circle 60 kph speed limit
+  4: red and white circle 70 kph speed limit
+  5: red and white circle 80 kph speed limit
+  6: end / de-restriction of 80 kph speed limit
+  7: red and white circle 100 kph speed limit
+  8: red and white circle 120 kph speed limit
+  9: red and white circle red car and black car no passing
+  10: red and white circle red truck and black car no passing
+  11: red and white triangle road intersection warning
+  12: white and yellow diamond priority road
+  13: red and white upside down triangle yield right-of-way
+  14: stop
+  15: empty red and white circle
+  16: red and white circle no truck entry
+  17: red circle with white horizontal stripe no entry
+  18: red and white triangle with exclamation mark warning
+  19: red and white triangle with black left curve approaching warning
+  20: red and white triangle with black right curve approaching warning
+  21: red and white triangle with black double curve approaching warning
+  22: red and white triangle rough / bumpy road warning
+  23: red and white triangle car skidding / slipping warning
+  24: red and white triangle with merging / narrow lanes warning
+  25: red and white triangle with person digging / construction / road work warning
+  26: red and white triangle with traffic light approaching warning
+  27: red and white triangle with person walking warning
+  28: red and white triangle with child and person walking warning
+  29: red and white triangle with bicycle warning
+  30: red and white triangle with snowflake / ice warning
+  31: red and white triangle with deer warning
+  32: white circle with gray strike bar no speed limit
+  33: blue circle with white right turn arrow mandatory
+  34: blue circle with white left turn arrow mandatory
+  35: blue circle with white forward arrow mandatory
+  36: blue circle with white forward or right turn arrow mandatory
+  37: blue circle with white forward or left turn arrow mandatory
+  38: blue circle with white keep right arrow mandatory
+  39: blue circle with white keep left arrow mandatory
+  40: blue circle with white arrows indicating a traffic circle
+  41: white circle with gray strike bar indicating no passing for cars has ended
+  42: white circle with gray strike bar indicating no passing for trucks has ended
+  43: complementary--chevron-left
+  44: complementary--chevron-right
+  45: complementary--distance
+  46: information--disabled-persons
+  47: information--gas-station
+  48: information--hospital
+  49: information--motorway
+  50: information--parking
+  51: information--tram-bus-stop
+  52: regulatory--axel-mass-limit
+  53: regulatory--bicycles-only
+  54: regulatory--go-straight
+  55: regulatory--go-straight-or-turn-left
+  56: regulatory--go-straight-or-turn-right
+  57: regulatory--height-limit
+  58: regulatory--keep-left
+  59: regulatory--keep-right
+  60: regulatory--maximum-speed-limit
+  61: regulatory--no-bicycles
+  62: regulatory--no-buses
+  63: regulatory--no-entry
+  64: regulatory--no-goods-vehicles
+  65: regulatory--no-goods-vehicles-exceeding-limit
+  66: regulatory--no-heavy-goods-vehicles
+  67: regulatory--no-left-turn
+  68: regulatory--no-motor-vehicles
+  69: regulatory--no-overtaking
+  70: regulatory--no-parking
+  71: regulatory--no-pedestrians
+  72: regulatory--no-right-turn
+  73: regulatory--no-u-turn
+  74: regulatory--pass-on-either-side
+  75: regulatory--pedestrians-only
+  76: regulatory--roundabout
+  77: regulatory--shared-path-pedestrians-and-bicycles
+  78: regulatory--stop
+  79: regulatory--turn-left
+  80: regulatory--turn-left-or-right
+  81: regulatory--turn-right
+  82: regulatory--weight-limit
+  83: regulatory--yield
+  84: regulatory--yield-to-oncoming-traffic
+  85: warning--bicycles-crossing
+  86: warning--children
+  87: warning--crossroads
+  88: warning--curve-left
+  89: warning--curve-right
+  90: warning--delineator
+  91: warning--delineator--left
+  92: warning--delineator--right
+  93: warning--domestic-animals
+  94: warning--double-curve-first-left
+  95: warning--double-curve-first-right
+  96: warning--falling-rocks-or-debris-left
+  97: warning--falling-rocks-or-debris-right
+  98: warning--junction-with-a-side-road-perpendicular-left
+  99: warning--junction-with-a-side-road-perpendicular-right
+  100: warning--other-danger
+  101: warning--pedestrians-crossing
+  102: warning--railroad-crossing-with-barriers
+  103: warning--railroad-crossing-without-barriers
+  104: warning--road-bump
+  105: warning--road-dip
+  106: warning--road-narrows
+  107: warning--road-narrows-left
+  108: warning--road-narrows-right
+  109: warning--road-slope-left
+  110: warning--road-slope-right
+  111: warning--roadworks
+  112: warning--roundabout
+  113: warning--slippery-road-surface
+  114: warning--traffic-merges-left
+  115: warning--traffic-merges-right
+  116: warning--traffic-signals
+  117: warning--uneven-road
+  118: warning--wild-animals
+  119: 5 kph speed limit
+  120: 15 kph speed limit
+  121: 30 kph speed limit
+  122: 40 kph speed limit
+  123: 50 kph speed limit
+  124: 60 kph speed limit
+  125: 70 kph speed limit
+  126: 80 kph speed limit
+  127: no left turn or going straight
+  128: no right turn or going straight
+  129: no going straight
+  130: no left turn
+  131: no left or right turn
+  132: no right turn
+  133: no overtaking
+  134: no U-turn
+  135: no passenger cars
+  136: no honking
+  137: end of 40 kph speed limit
+  138: approaching 50 kph speed limit
+  139: straight ahead or right turn only
+  140: straight ahead only
+  141: left turn only
+  142: left or right turn only
+  143: right turn only
+  144: keep left
+  145: keep right
+  146: traffic circle ahead
+  147: passenger cars only
+  148: honking allowed
+  149: bicycle lane
+  150: U-turn only
+  151: obstacle ahead
+  152: traffic light ahead
+  153: slow down
+  154: pedestrian crossing
+  155: bicycle crossing
+  156: school zone
+  157: sharp left turn ahead
+  158: sharp right turn ahead
+  159: steep incline ahead (left)
+  160: steep incline ahead (right)
+  161: slow down and proceed with caution
+  162: right T-junction ahead
+  163: left T-junction ahead
+  164: village ahead
+  165: sharp turn ahead
+  166: railroad crossing ahead
+  167: roadworks ahead
+  168: very sharp turn ahead
+  169: railway level crossing
+  170: caution: tailgating risk
+  171: stop
+  172: no entry
+  173: no parking
+  174: no stopping
+  175: give way
+  176: stop and check
+  177: A street lamp
+  178: A traffic light
+  179: A car
+
+

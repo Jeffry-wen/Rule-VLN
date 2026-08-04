@@ -1,0 +1,29 @@
+name: rule_vln_mpsi
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+dependencies:
+  - python=3.10
+  - pip
+  - pytorch=2.5.1
+  - torchvision=0.20.1
+  - pytorch-cuda=12.4
+  - pip:
+      - -e ./MPSI
+      - accelerate
+      - diffusers==0.32.2
+      - easydict
+      - huggingface-hub
+      - kornia
+      - nunchaku
+      - numpy<2
+      - opencv-python
+      - peft==0.15.1
+      - Pillow
+      - PyYAML
+      - scikit-learn
+      - scipy
+      - timm
+      - tqdm
+      - transformers==4.50.3
