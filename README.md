@@ -1,4 +1,4 @@
-# Rule-VLN
+# Rule-VLN: Bridging Perception and Compliance via Semantic Reasoning and Geometric Rectification (ECCV 2026)
 
 <p align="center">
   <a href="https://jeffry-wen.github.io/Rule-VLN/">Project Page</a> |
