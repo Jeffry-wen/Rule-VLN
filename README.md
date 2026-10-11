@@ -330,10 +330,12 @@ We thank [FLAME](https://github.com/xyz9911/FLAME) for providing the navigation 
 If you find Rule-VLN useful, please cite:
 
 ```bibtex
-@article{wen2026rule,
+@inproceedings{wen2026rule,
   title={Rule-VLN: Bridging Perception and Compliance via Semantic Reasoning and Geometric Rectification},
   author={Wen, Jiawen and Sun, Penglei and Zhang, Wenjie and Qiu, Suixuan and Xu, Weisheng and Yang, Xiaofei and Chu, Xiaowen},
-  journal={arXiv preprint arXiv:2604.16993},
-  year={2026}
+  booktitle={European Conference on Computer Vision},
+  pages={465--483},
+  year={2026},
+  organization={Springer}
 }
 ```
